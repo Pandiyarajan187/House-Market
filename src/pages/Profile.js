@@ -64,7 +64,7 @@ function Profile() {
     auth.signOut();
     navigate("/signin");
   };
-
+  console.log(listings);
   const onSubmit = async () => {
     try {
       if (auth.currentUser.displayName !== name) {
